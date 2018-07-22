@@ -4,7 +4,7 @@ Completed term: 2016 Fall
 
 
 *****************************************************************************
-###Steps finished
+### Steps finished
 *****************************************************************************
 Mini-Project: Command Shell
 
@@ -23,9 +23,9 @@ time to time, so I am rather presenting the well-polished first 3.5 steps)
 
 
 *****************************************************************************
-###Implementation details
+### Implementation details
 *****************************************************************************
-#####Data structures:
+##### Data structures:
 1. class UserInput:  stores and parses user's input
 2. class CmdHandler: takes in UserInput and executes commands
 
@@ -33,7 +33,7 @@ These two classes are independent and have interfaces that can be used by
 other callers as well.
 
 
-#####class UserInput: 
+##### class UserInput: 
 1. store arguments that seperated by white spaces (not inluding "\ ") in 
    vector<string> first
 2. search from the vector for "<" ">" "2>", and store the redirected file-
@@ -43,7 +43,7 @@ other callers as well.
    argument list(char **), the redirection info (string[3])
 5. execeptions might be thrown, including empty input or calling exit
 
-#####class CmdHandler:
+##### class CmdHandler:
 1. store the working directory, the caller's directory, directory stack, and
    environment parameter
 2. method executeCmd(UserInput) is used to execute the command:
@@ -61,13 +61,13 @@ other callers as well.
           runs, print out the exit status
 3. method printPrompt() is used to reflect current working directory
 
-#####main:
+##### main:
 1. initialize UserInput and CmdHandler
 2. while "exit" is not called, update UserInput, and run CmdHandler.
 
    Catch the exceptions mentioned above
 
-#####pipes
+##### pipes
 
 (not implemented in the current version presented here):
 
@@ -82,7 +82,7 @@ Errors occur in terms of strings, possibly related to parsing.
 
 
 *****************************************************************************
-###Test cases
+### Test cases
 *****************************************************************************
 1.  Commands
     1. Program with path given, i.e., has a / in it
@@ -109,7 +109,7 @@ Errors occur in terms of strings, possibly related to parsing.
     4. arguments that have "\ " in them, which appears at the beginning, in
        the middle, at the end, stand-alone, consecutively("\ \ ")
 
-3.Directory
+3. Directory
     1. cd, pushd
        *   cd into child directory
        *  cd ./ ../
