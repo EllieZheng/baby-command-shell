@@ -39,20 +39,20 @@ class CmdHandler:
 1. store the working directory, the caller's directory, directory stack, and
    environment parameter
 2. method executeCmd(UserInput) is used to execute the command:
-   i. if path is not specified (i.e., do not contain /):
-      a. if "cd" "pushd" "dirstack" are called, then make changes to the
-         directory
-      b. search in PATHs the program. If found, update the command with the
-         full path to it
-
-   ii.if path is specified, or command is in PATHs:
-      a. fork the process 
-      b. child: set up redirection according to the UserInput by dup2(), 
-         then call execve(). 
-         Exception might be thrown if execve() fails, and error message will
-         be printed by perror.
-      c. parent: wait and check the status of child. If the program actually
-         runs, print out the exit status
+    i. if path is not specified (i.e., do not contain /):
+          a. if "cd" "pushd" "dirstack" are called, then make changes to the
+          directory
+          b. search in PATHs the program. If found, update the command with the
+          full path to it
+ 
+    ii.if path is specified, or command is in PATHs:
+          a. fork the process 
+          b. child: set up redirection according to the UserInput by dup2(), 
+          then call execve(). 
+          Exception might be thrown if execve() fails, and error message will
+          be printed by perror.
+          c. parent: wait and check the status of child. If the program actually
+          runs, print out the exit status
 3. method printPrompt() is used to reflect current working directory
 
 main:
@@ -74,16 +74,16 @@ Errors occur in terms of strings, possibly related to parsing.
 *****************************************************************************
 I.  Commands
     1. Program with path given, i.e., has a / in it
-       i.   Existing file with different file types (regular files, links,
-            directory, etc.), and different permission 
-       ii.  Files in either current folder or other folders, absolute path
-            or relative path
-       iii. File not exists
+        i.   Existing file with different file types (regular files, links,
+             directory, etc.), and different permission 
+        ii.  Files in either current folder or other folders, absolute path
+             or relative path
+        iii. File not exists
     2. Program with no path given, i.e., does no have / in it
-       i.   Common linux commands: ls, echo, cat, clear, cp, mkdir
-       ii.  Programs in user-added PATHs: ~/ece551/lz91/bin/
-       iii. Programs in the current folder
-       iv.  Command not exist: randomly typed words
+        i.   Common linux commands: ls, echo, cat, clear, cp, mkdir
+        ii.  Programs in user-added PATHs: ~/ece551/lz91/bin/
+        iii. Programs in the current folder
+        iv.  Command not exist: randomly typed words
     3. Program executed successfully or with error, or ^C'd by user  
        In this case, program exit status should printed accordingly
     *. Do not know how to test if fork() fails or other system calls fail
