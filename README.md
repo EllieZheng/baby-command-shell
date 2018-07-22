@@ -1,31 +1,31 @@
-Author: Ellie Zheng (lz91)
+Author: Ellie Zheng
 
 Completed term: 2016 Fall
 
 
 *****************************************************************************
-### Steps finished
+## Steps finished
 *****************************************************************************
 Mini-Project: Command Shell
 
 All contents in Step 1, 2, 3:
 
-**Step 1: Read a command name, run it. After exiting, return the exit status.
+**Step 1:** Read a command name, run it. After exiting, return the exit status.
 
-**Step 2: Search the PATH environment variable for commands, which can take arguments.
+**Step 2:** Search the PATH environment variable for commands, which can take arguments.
 
-**Step 3: Navigate between directories: cd, pushd, popd, dirstack. Prompts are changed accordingly.
+**Step 3:** Navigate between directories: cd, pushd, popd, dirstack. Prompts are changed accordingly.
 
-**Step 4: Redirection (<, >, 2>). Pipes is not implemented.
+**Step 4:** Redirection (<, >, 2>). Pipes is not implemented.
 
 (I attempted pipes in the foler "4_step_attempt", but the program crashes from 
 time to time, so I am rather presenting the well-polished first 3.5 steps)
 
 
 *****************************************************************************
-### Implementation details
+## Implementation details
 *****************************************************************************
-##### Data structures:
+#### Data structures:
 1. class UserInput:  stores and parses user's input
 2. class CmdHandler: takes in UserInput and executes commands
 
@@ -33,7 +33,7 @@ These two classes are independent and have interfaces that can be used by
 other callers as well.
 
 
-##### class UserInput: 
+#### class **UserInput**: 
 1. store arguments that seperated by white spaces (not inluding "\ ") in 
    vector<string> first
 2. search from the vector for "<" ">" "2>", and store the redirected file-
@@ -43,7 +43,7 @@ other callers as well.
    argument list(char **), the redirection info (string[3])
 5. execeptions might be thrown, including empty input or calling exit
 
-##### class CmdHandler:
+#### class **CmdHandler**:
 1. store the working directory, the caller's directory, directory stack, and
    environment parameter
 2. method executeCmd(UserInput) is used to execute the command:
@@ -61,13 +61,13 @@ other callers as well.
           runs, print out the exit status
 3. method printPrompt() is used to reflect current working directory
 
-##### main:
+#### main:
 1. initialize UserInput and CmdHandler
 2. while "exit" is not called, update UserInput, and run CmdHandler.
 
    Catch the exceptions mentioned above
 
-##### pipes
+#### pipes
 
 (not implemented in the current version presented here):
 
@@ -84,7 +84,7 @@ Errors occur in terms of strings, possibly related to parsing.
 *****************************************************************************
 ### Test cases
 *****************************************************************************
-1.  Commands
+1. Commands
     1. Program with path given, i.e., has a / in it
         *   Existing file with different file types (regular files, links,
              directory, etc.), and different permission 
