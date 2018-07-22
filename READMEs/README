@@ -1,0 +1,84 @@
+Your final programming assignment is the "mini project."
+For this assignment, you have may choose from a few different
+options.  You only need to choose ONE of these options (do
+NOT  do all of them).  Each mini-project option has
+115% possible on it, divided among 4 steps as follows:
+
+Step 1: 50%
+Step 2: 30%
+Step 3: 20%
+Step 4: 15%
+
+This mini-project is due at 11:59:59 PM on Dec 2, giving you almost the entire
+month of November to work on it.
+
+For any of these options, you may need to consult other materials
+for relevant domain knowledge.  However, you should have obtained the
+programming skills to complete the project in this course.  
+
+Your mini-project options are (details after signing the honor statement):
+
+
+ (1) A cache simulator [in cache.txt]
+     You need knowledge from taking 550 to do this.
+     This option is excellent preparation for 552 + 590-Performance-Optimization
+ (2) A command shell [commandShell.txt]
+     You will need to consult man pages about system calls to do this.
+     This option is great preparation if you plan to take: 650
+ (3) Numerical methods [numerics.txt]
+     You will need some mathematical knowledge to do this.
+     You will also need to perform simple parsing, however, you
+     can use the code I gave you in 94_huff_freq to show you how to do so.
+     This option is great preparation if you plan to take 681.
+
+
+I expect these to be polished, well tested pieces of code.
+
+For any of these, you should submit
+  - A Makfile which builds your program.
+  - A textfile called completed.txt which describes which steps (or pieces of
+    steps) you finished, and describes the testcases that you have included
+    to showcase what you did.
+  - Testcases that show that your code works.  I will still test with my own
+    cases, but if you can supply test cases that show me your code works,
+    that helps you significantly if you fail my cases.
+  - Your source code.
+
+When you submit, the graders will simply check if completed.txt exists and
+run "make" and give you a grade of 0 (did not compile or did not include 
+completed.txt) or 1 (compiled and included completed.txt). 
+
+*************************************************
+*** YOUR ACTUAL GRADE WILL BE ASSIGNED LATER  ***
+*************************************************
+The 0 or 1 will just let you know if your code compiled with 
+"make"/you had completed.txt.  
+If not, please fix and resubmit.
+
+****************************************
+*** THIS IS AN EVALUATIVE ASSIGNMENT ***
+****************************************
+ - The deadline is absolute.
+ - You must work on this like an exam.
+     - You may use AoP
+     - You may use the UNIX man pages
+     - Your own course notebook
+     - You may seek DOMAIN KNOWLEDGE (but not code) from online or written resources.
+     - You may NOT show your code to another student
+     - You may NOT look at any other student's code
+     - If you have performed a similar assignment in another course, you 
+       should choose a different option.  If you are unsure, you should talk to me
+       before choosing.
+     - You may NOT make use of (copy, read, reference, look at) code written
+       by anyone other than you, with the following exceptions:
+         o Code examples appearing in AoP or the UNIX man pages
+         o Code that I provided to you in your prior classwork assignments.
+     - You may NOT discuss your approach, solutions, or difficulties on
+       this assignments with other students.  
+     - You may not give nor receive help debugging to another student.
+         o You may ask the Professor or TAs for help debugging.
+
+
+
+
+ 

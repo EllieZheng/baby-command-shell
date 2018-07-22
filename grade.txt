@@ -1,0 +1,20 @@
+Grading at 12/03/2016:04:42:46.837595
+For commit ID 1571bafa2c772c70152921e5f21c1eac4eb0fab2
+You have a file called completed.txt [good]
+Doing make clean...
+rm myShell *~ *.o
+rm: cannot remove ‘myShell’: No such file or directory
+rm: cannot remove ‘*~’: No such file or directory
+rm: cannot remove ‘*.o’: No such file or directory
+make: *** [clean] Error 1
+And make
+g++ -ggdb3 -Wall -Werror -pedantic -std=gnu++98 -c userinput.cpp
+g++ -ggdb3 -Wall -Werror -pedantic -std=gnu++98 -c cmdhandler.cpp
+g++ -ggdb3 -Wall -Werror -pedantic -std=gnu++98 -c myShell.cpp
+g++ -ggdb3 -Wall -Werror -pedantic -std=gnu++98 -o myShell  userinput.o  cmdhandler.o  myShell.o
+Make appears to have succeeded [good]
+This grade is not your real grade, and just indicates
+that your code 'make's fine.  Your real grade will be
+given after the deadline
+
+Overall Grade: 1

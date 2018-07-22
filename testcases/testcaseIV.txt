@@ -1,0 +1,27 @@
+echo "Redirection"
+
+cat < temp > output1 2> temp.err
+tail -10 testcaseI.txt > output2
+cat < testcaseII.txt
+which 2> which.err
+rm temp.err 
+rm which.err
+
+echo > output1 > output2
+< testcaseII.txt cat 
+> output2 < temp cat
+
+echo <
+
+echo < filenotexist
+
+echo < ../completed.txt
+echo tmpfile > ../tmpfile
+cat ../tmpfile
+rm ../tmpfile
+./sortLines < /home/lz91/ece551/README.txt
+./sortLines < ~/ece551/README.txt
+echo < /home/yz277/ece551/README.txt
+rm output1
+rm output2
+exit

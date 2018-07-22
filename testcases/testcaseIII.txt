@@ -1,0 +1,36 @@
+echo "Directory"
+
+mkdir tmpdir
+cd tmpdir
+pushd ./
+cd ../
+pushd /dev/
+pushd /home/yz277
+pushd /home/lz91
+pushd /home/home
+cd sadfsdfadf
+cd
+rm -rf tmpdir
+cd ../ ./
+
+popd
+dirstack
+popd
+dirstack
+popd
+dirstack
+popd
+dirstack
+popd
+dirstack
+popd
+dirstack
+
+cd
+ls
+
+echo "Goodbye"
+
+exit
+
+

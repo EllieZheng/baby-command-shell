@@ -1,0 +1,36 @@
+echo "Program with path given"
+/dev/null
+/dev/fd
+/bin/ls
+/etc/vtrgb
+/dev
+../../
+./README
+./test
+../92_dedup/dedup
+~/ece551/56_stat/test.sh
+/afl
+dsf/dsf
+
+echo "Program with no path"
+ls -lha
+echo "hello drew" > input1
+rm input1
+cat ./testcaseII.txt
+clear
+cp completed.txt duplicates.txt
+rm duplicates.txt
+mkdir tmpdir
+rm -rf tmpdir
+test
+saf lsf f
+myEcho
+inMyOwnPath
+
+echo "exit status"
+which
+git
+grep "program" README
+./sortLines < input1
+echo "Goodbye"
+exit
