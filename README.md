@@ -4,7 +4,7 @@ Completed term: 2016 Fall
 
 
 *****************************************************************************
-## Steps finished
+### Steps finished
 *****************************************************************************
 Mini-Project: Command Shell
 
@@ -23,7 +23,7 @@ time to time, so I am rather presenting the well-polished first 3.5 steps)
 
 
 *****************************************************************************
-## Implementation details
+### Implementation details
 *****************************************************************************
 #### Data structures:
 1. class UserInput:  stores and parses user's input
