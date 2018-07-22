@@ -44,6 +44,7 @@ class CmdHandler:
          directory
       b. search in PATHs the program. If found, update the command with the
          full path to it
+
    ii.if path is specified, or command is in PATHs:
       a. fork the process 
       b. child: set up redirection according to the UserInput by dup2(), 
